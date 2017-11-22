@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22-nov-2017 20:05:17 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.cice.hibernate.pojo.Usuarios" table="usuarios" catalog="blogcice" optimistic-lock="version">
+        <id name="usuariosid" type="java.lang.Integer">
+            <column name="usuariosid" />
+            <generator class="identity" />
+        </id>
+        <property name="user" type="string">
+            <column name="user" length="254" not-null="true" />
+        </property>
+        <property name="pass" type="string">
+            <column name="pass" length="254" not-null="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" length="254" />
+        </property>
+    </class>
+</hibernate-mapping>
